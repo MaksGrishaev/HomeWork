@@ -21,7 +21,6 @@ public class RunningLights {
     }
 
     public static void runningLights1(int count, int base) {
-        int len = Integer.toBinaryString(base).length();
         for (int i = 0; i < count; i++) {
             printLights(base);
             printLights(~base);
@@ -38,8 +37,9 @@ public class RunningLights {
     }
 
     public static void printLights(int base) {
-        for (int j = 0; j < 32 - (Integer.toBinaryString(base).length()); j++)
+        for (int j = 0; j < 32 - (Integer.toBinaryString(base).length()); j++) {
             System.out.print(0);
+        }
         System.out.println(Integer.toBinaryString(base));
     }
 }

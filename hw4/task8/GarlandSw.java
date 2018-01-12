@@ -2,7 +2,7 @@ package hw4.task8;
 
 import hw3.task2.InputInt;
 
-public class garlandSw {
+public class GarlandSw {
     public static void main(String[] args) {
         int count = 8;
         int garlandInt = 2048 + (int) (Math.random() * 16384);

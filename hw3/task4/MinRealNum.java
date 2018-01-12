@@ -1,7 +1,5 @@
 package hw3.task4;
 
-import hw3.task4.InputFloat;
-
 public class MinRealNum {
     public static void main(String[] args) {
         float varFloat1 = InputFloat.inputFloat();
@@ -22,11 +20,12 @@ public class MinRealNum {
     }
 
     public static float min3Float(float var1, float var2, float var3) {
-        if (var1 <= var2 && var1 <= var3)
+        if (var1 <= var2 && var1 <= var3) {
             return var1;
-        else if (var2 <= var1 && var2 <= var3)
+        } else if (var2 <= var1 && var2 <= var3) {
             return var2;
-        else
+        } else {
             return var3;
+        }
     }
 }
