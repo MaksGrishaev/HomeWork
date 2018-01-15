@@ -7,28 +7,16 @@ public class Matrix {
     private int row;
     private int column;
 
-    Matrix() {
-        int n = 2;
-        setRow(n);
-        setColumn(n);
-        nullMatrix(n, n);
-    }
-
-    Matrix(boolean manual) {
-        this();
-        if (manual == true) {
-            System.out.print("Количество строк (по умолчанию 2): ");
-            setRow(inputInt());
-            System.out.print("Количество столбцов (по умолчанию 2): ");
-            setColumn(inputInt());
-            generateMatrix(row, column);
-        }
+    Matrix(int row, int column) {
+        this.row = row;
+        this.column = column;
+        nullMatrix(row, column);
     }
 
     Matrix(int row, int column, boolean zero) {
         setRow(row);
         setColumn(column);
-        if (zero == true) {
+        if (zero) {
             nullMatrix(row, column);
         } else {
             generateMatrix(row, column);
@@ -49,17 +37,6 @@ public class Matrix {
 
     public int getColumn() {
         return column;
-    }
-
-    private int inputInt() {
-        Scanner sc = new Scanner(System.in);
-        int n;
-        if (!sc.hasNextInt()) {
-            n = 2;
-        } else {
-            n = sc.nextInt();
-        }
-        return n;
     }
 
     private void generateMatrix(int rows, int columns) {
@@ -109,6 +86,9 @@ public class Matrix {
     }
 
     Matrix multMatrix(Matrix matrix2) {
+        if (this.column != matrix2.row){
+            return null;
+        }
         int newRow = this.row;
         int newColumn = matrix2.column;
         Matrix result = new Matrix(newRow, newColumn, true);
