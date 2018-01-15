@@ -7,7 +7,6 @@ public class ArrayGarlandMethods {
 
     public static void garlandChoice(int[] garland) {
         Scanner sc = new Scanner(System.in);
-        String choice = "a";
         System.out.print("режимы работы гирлянды:\n" +
                 "\ta - инверсия\n" +
                 "\tb - циклический сдвиг вправо\n" +
@@ -16,7 +15,7 @@ public class ArrayGarlandMethods {
                 "\tсc - циклический сдвиг влево(System.arraycopy(...))\n" +
                 "\tлюбой символ для выхода\n" +
                 "Ваш выбор: ");
-        choice = sc.next();
+        String choice = sc.next();
         int count;
         switch (choice) {
             case "a":
@@ -68,7 +67,7 @@ public class ArrayGarlandMethods {
     public static void generateBinGarland(int[] garland) {
         Random random = new Random();
         for (int i = 0; i < garland.length; i++) {
-            garland[i] = (random.nextInt(100)) % 2;
+            garland[i] = random.nextInt(100) % 2;
         }
     }
 

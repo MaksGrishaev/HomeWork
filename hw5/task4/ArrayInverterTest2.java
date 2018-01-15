@@ -1,8 +1,4 @@
 package hw5.task4;
-/*
-Добавить в программу ArrayInverterTest2 еще один тестовый массив. Делаем дебаг и смотрим как работает.
-(Задание с урока).
-*/
 
 import java.util.Arrays;
 
@@ -13,7 +9,6 @@ public class ArrayInverterTest2 {
         testInvert(new int[]{0, 1});
         testInvert(new int[]{0, 1, 2, 3, 4});
         testInvert(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0});
-
     }
 
     private static void testInvert(int[] array) {

@@ -53,8 +53,9 @@ public class ArrayMyUtils {
                 System.out.println();
 
             }
-            if (done != true)
+            if (!done) {
                 break;
+            }
         }
     }
 

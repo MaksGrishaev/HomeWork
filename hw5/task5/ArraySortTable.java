@@ -1,8 +1,4 @@
 package hw5.task5;
-/*
-Создать табличку для любого массива, в котором последовательно прописать значения i, j,
-массива для  каждого цикла алгоритма сортировки пузырька. Используйте debugger.
-*/
 
 public class ArraySortTable {
     public static void main(String[] args) {
