@@ -86,7 +86,7 @@ public class Matrix {
     }
 
     Matrix multMatrix(Matrix matrix2) {
-        if (this.column != matrix2.row){
+        if (this.column != matrix2.row) {
             return null;
         }
         int newRow = this.row;
