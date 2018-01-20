@@ -6,5 +6,4 @@ public class ArrayGarland {
         ArrayGarlandMethods.generateBinGarland(garland);
         ArrayGarlandMethods.garlandChoice(garland);
     }
-
 }

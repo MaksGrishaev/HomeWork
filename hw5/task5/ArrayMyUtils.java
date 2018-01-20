@@ -30,7 +30,7 @@ public class ArrayMyUtils {
                 ArrayMyUtils.arrayIntShow(varArr);
                 System.out.println();
             }
-            if (done != true)
+            if (!done)
                 break;
         }
     }
@@ -77,7 +77,7 @@ public class ArrayMyUtils {
                 System.out.println();
 
             }
-            if (done != true)
+            if (!done)
                 break;
         }
     }

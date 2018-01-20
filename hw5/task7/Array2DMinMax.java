@@ -17,5 +17,4 @@ public class Array2DMinMax {
         System.out.println("\nmin/max");
         ArrayMinMax.array2DShow(arrMinMax);
     }
-
 }
