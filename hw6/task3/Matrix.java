@@ -1,19 +1,17 @@
 package hw6.task3;
 
-import java.util.Scanner;
-
 public class Matrix {
     private double[][] array;
     private int row;
     private int column;
 
-    Matrix(int row, int column) {
+    public Matrix(int row, int column) {
         this.row = row;
         this.column = column;
         nullMatrix(row, column);
     }
 
-    Matrix(int row, int column, boolean zero) {
+    public Matrix(int row, int column, boolean zero) {
         setRow(row);
         setColumn(column);
         if (zero) {

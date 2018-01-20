@@ -24,28 +24,28 @@ public class MyPhone {
         private int weight;
 
 
-        Phone() {
+        public Phone() {
             name = null;
             model = null;
             number = null;
             weight = 0;
         }
 
-        Phone(String number) {
+        public Phone(String number) {
             this.number = number;
         }
 
-        Phone(String name, String num) {
+        public Phone(String name, String num) {
             this(num);
             this.name = name;
         }
 
-        Phone(String name, String number, String model) {
+        public Phone(String name, String number, String model) {
             this(name, number);
             this.model = model;
         }
 
-        Phone(String name, String num, String mod, int w) {
+        public Phone(String name, String num, String mod, int w) {
             this(name, num);
             this.model = mod;
             weight = w;
