@@ -20,7 +20,5 @@ public class ArrayString2 {
             }
             System.out.println();
         }
-
     }
-
 }

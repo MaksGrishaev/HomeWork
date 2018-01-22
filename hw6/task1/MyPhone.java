@@ -23,28 +23,29 @@ public class MyPhone {
         private String model;
         private int weight;
 
-        public Phone() {
+
+        Phone() {
             name = null;
             model = null;
             number = null;
             weight = 0;
         }
 
-        public Phone(String number) {
+        Phone(String number) {
             this.number = number;
         }
 
-        public Phone(String name, String num) {
+        Phone(String name, String num) {
             this(num);
             this.name = name;
         }
 
-        public Phone(String name, String number, String model) {
+        Phone(String name, String number, String model) {
             this(name, number);
             this.model = model;
         }
 
-        public Phone(String name, String num, String mod, int w) {
+        Phone(String name, String num, String mod, int w) {
             this(name, num);
             this.model = mod;
             weight = w;
@@ -66,25 +67,25 @@ public class MyPhone {
             return number;
         }
 
-        public void receiveCall(String inName) {
+        void receiveCall(String inName) {
             System.out.println("MESSAGE from : " + this.name);
             System.out.println("\tЗвонит " + inName);
         }
 
-        public void receiveCall(String inName, String inNum) {
+        void receiveCall(String inName, String inNum) {
             System.out.println("MESSAGE from : " + this.name);
             System.out.print("\tЗвонит " + inName);
             System.out.println(", номер : " + inNum);
         }
 
-        public void sendMessage(String... outNum) {
+        void sendMessage(String... outNum) {
             System.out.println("Отправляем сообщение с номера " + this.number + " номерам:");
             for (String tmp : outNum) {
                 System.out.println("\t" + tmp);
             }
         }
 
-        public void showInfo() {
+        void showInfo() {
             System.out.println("----------------------");
             if (name != null) {
                 System.out.print("-Имя: " + name);

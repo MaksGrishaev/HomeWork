@@ -10,7 +10,7 @@ public class Reader {
     private int countBooks;
     private Book[] receivedBooks;
 
-    Reader(String fio, String dateOfBirth, String faculty, String numTiket) {
+    public Reader(String fio, String dateOfBirth, String faculty, String numTiket) {
         this.fio = fio;
         this.dateOfBirth = dateOfBirth;
         this.faculty = faculty;
