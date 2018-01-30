@@ -8,11 +8,9 @@ public class VetClinic {
         animals[2] = new Horse("straw", "stable");
 
         Vet doc = new Vet();
-        animals[0].makeNoise();
-        animals[1].makeNoise();
-        animals[2].makeNoise();
-        doc.treatAnimal(animals[0]);
-        doc.treatAnimal(animals[1]);
-        doc.treatAnimal(animals[2]);
+        for (Animal animal: animals){
+            animal.makeNoise();
+            doc.treatAnimal(animal);
+        }
     }
 }
