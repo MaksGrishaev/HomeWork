@@ -1,28 +1,26 @@
 package hw9.task1;
 
 public abstract class Fruit {
+    protected double weight;
     protected String fruitName;
-    private double weight;
-    private double price;
 
-    public Fruit(double weight, double price) {
+    public Fruit(double weight) {
         this.weight = weight;
-        this.price = price;
     }
 
     public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public double getWeight() {
         return weight;
     }
 
-    public abstract double getPrice();
+    public String getFruitName() {
+        return fruitName;
+    }
+
+    public abstract double getCost();
 
     public void printManufacturerInfo(){System.out.print("Made in Ukraine");}
 }
