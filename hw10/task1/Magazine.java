@@ -27,7 +27,7 @@ public class Magazine implements Printable {
 
     public static void printMagazines(Printable[] printable) {
         for (Printable prnt : printable) {
-            if (prnt.getType() == "Magazine") {
+            if (prnt instanceof Magazine) {
                 prnt.print();
             }
         }
