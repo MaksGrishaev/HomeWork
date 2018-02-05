@@ -17,6 +17,6 @@ public class Drum implements Instrument {
 
     @Override
     public void play() {
-        System.out.printf("Играет барабан, размер: %d ", getDrumSize());
+        System.out.printf("Играет барабан, размер: %d\n", getDrumSize());
     }
 }

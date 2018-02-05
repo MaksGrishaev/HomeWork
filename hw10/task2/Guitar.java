@@ -17,6 +17,6 @@ public class Guitar implements Instrument {
 
     @Override
     public void play() {
-        System.out.printf("Играет гитара:%d струн", getAmountStrings());
+        System.out.printf("Играет гитара:%d струн\n", getAmountStrings());
     }
 }

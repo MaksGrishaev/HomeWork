@@ -17,6 +17,6 @@ public class Trumpet implements Instrument {
 
     @Override
     public void play() {
-        System.out.printf("Играет труба, диаметр: %.1f", getDiametr());
+        System.out.printf("Играет труба, диаметр: %.1f\n", getDiametr());
     }
 }
