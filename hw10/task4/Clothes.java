@@ -1,4 +1,4 @@
-package hw10.task3;
+package hw10.task4;
 
 public class Clothes {
     public static void main(String[] args) {
