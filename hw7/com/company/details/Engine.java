@@ -30,4 +30,14 @@ public class Engine {
         return "\tПроизводитель: " + engineBrand +
                 ".\n\t\t\tМощность: " + power + ".";
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

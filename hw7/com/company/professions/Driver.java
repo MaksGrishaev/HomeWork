@@ -1,7 +1,6 @@
 package hw7.com.company.professions;
 
 public class Driver extends Person {
-    private String fio;
     private int experience;
 
     public Driver(String fio, int age, int experience) {
@@ -22,5 +21,15 @@ public class Driver extends Person {
         return "\tФИО: " + getFio() +
                 ".\n\t\t\tВозраст: " + getAge() +
                 ".\n\t\t\tОпыт: " + getExperience() + ".";
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

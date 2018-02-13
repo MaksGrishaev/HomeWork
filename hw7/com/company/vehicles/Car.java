@@ -81,4 +81,14 @@ public class Car {
         System.out.println("Двигатель: " + engine.toString());
         System.out.println("Водитель: " + driver.toString());
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
