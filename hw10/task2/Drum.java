@@ -19,4 +19,19 @@ public class Drum implements Instrument {
     public void play() {
         System.out.printf("Играет барабан, размер: %d\n", getDrumSize());
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
